@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -8,4 +15,13 @@ function App() {
   );
 }
 
-export default App;
+const App2 = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="inicio" element={<Home />} />
+    </Routes>
+  </BrowserRouter>
+)
+
+export default App2;
