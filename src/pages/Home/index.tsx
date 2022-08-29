@@ -4,7 +4,7 @@ import Button from '../../components/atoms/Button'
 const Home = () => (
   <>
     <h1>Home</h1>
-    <Button variant='primary'/>
+    <Button variant='contained'/>
   </>
 )
 
